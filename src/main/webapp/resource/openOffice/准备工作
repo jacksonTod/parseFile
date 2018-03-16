@@ -1,0 +1,26 @@
+准备工作
+1.安装OpenOffice(官网下载地址：http://www.openoffice.org/download/index.html)该软件的作用是将Office转换为Pdf
+2.安装Swftools软件，作用是将Pdf转换为Swf(官网下载地址：http://www.swftools.org/download.html)
+3.安装FlexPaper，该软件的作用是解析并显示SWF格式的文件(官网下载地址：https://flowpaper.com/download/)
+4.执行完上述工作后，进入OpenOffice安装目录下的program下，启动OpenOffice服务
+
+执行命令：soffice -headless -accept="socket,host=127.0.0.1,port=8100;urp;" -nofirststartwizard
+
+开发部分对应介绍
+1.jar包
+<dependency>
+    <groupId>com.artofsolving</groupId>
+    <artifactId>jodconverter</artifactId>
+    <version>2.2.1</version>
+</dependency>
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.7.5</version>
+</dependency>
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.5</version>
+</dependency>
+2.js(这个插件需要有三个js文件。分别是：jquery.js、flexpaper_flash.js、flexpaper_flash_debug.js。插件的名字是FlexPaperViewer.swf)
