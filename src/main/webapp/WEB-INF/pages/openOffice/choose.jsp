@@ -12,6 +12,7 @@
 <span onclick="test('1')">word</span><br>
 <span onclick="test('2')">ppt</span><br>
 <span onclick="test('3')">excel</span><br>
+<a href="/tv.html">mp4</a><br>
 
 <script>
     function test(type){

@@ -41,4 +41,10 @@ public class OpenOffice {
 
         return new ModelAndView("openOffice/choose");
     }
+
+    @RequestMapping(value = "/tv")
+    public ModelAndView tv(HttpServletRequest request,String type) {
+
+        return new ModelAndView("openOffice/tv");
+    }
 }
